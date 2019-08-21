@@ -135,6 +135,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
 }
 /* Your Code Goes Here */
 .container {
@@ -143,5 +144,31 @@ html {
 }
 nav {
   background: #98A4AF;
+  padding: 1.5rem 10%;
+}
+nav h2 {
+  float: left;
   color: white;
+  font-size: 3rem;
+}
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+nav .dropdown img {
+  cursor: pointer;
+}
+nav .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  min-width: 16rem;
+  z-index: 1;
+}
+nav .dropdown .dropdown-menu a:hover {
+  background-color: #000;
+  color: white;
+}
+nav .dropdown:hover .dropdown-menu {
+  display: block;
 }
